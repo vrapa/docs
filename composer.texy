@@ -1,0 +1,31 @@
+Using as a Composer Repository
+##############################
+
+.[perex]
+Besides downloading addons manually with your browser, you can also install & update all of them using Composer.
+
+Registration
+============
+
+You can use Nette Addons as a **Composer repository**. To do so, register the repository in your `composer.json`.
+
+/--
+{
+	"require": {
+		"nette/nette": "2.0.*",
+		...
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "http://addons.nette.org/"
+		}
+	]
+}
+\--
+
+
+Installing & Updating Addons
+============================
+
+After registering the repository, you can install & update all here published Nette addons via Composer (the same way as if they were published on Packagist).
